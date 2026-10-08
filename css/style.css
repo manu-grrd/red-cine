@@ -1,0 +1,219 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #090909;
+    border-bottom: 3px solid #e52329;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header h1 span {
+    color: #e52329;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e52329;
+}
+
+/* Conteúdo principal */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Banner principal */
+#inicio {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+
+    text-align: center;
+    padding: 90px 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+#inicio h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    margin-bottom: 25px;
+}
+
+/* Botões */
+.botao,
+#inicio > a {
+    display: inline-block;
+    background-color: #e52329;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.botao:hover,
+#inicio > a:hover {
+    background-color: #b8171c;
+}
+
+/* Filmes, sessões e ingressos */
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+article {
+    background-color: #202020;
+    border: 1px solid #414141;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+article:hover {
+    border-color: #e52329;
+}
+
+#filmes article {
+    padding: 0;
+}
+
+#filmes article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+#filmes article h3,
+#filmes article p,
+#filmes article a {
+    margin: 12px 15px;
+}
+
+article h3 {
+    margin-bottom: 8px;
+}
+
+article p {
+    color: #c9c9c9;
+    margin-bottom: 12px;
+}
+
+article .botao {
+    margin-top: 5px;
+}
+
+/* Destaque do combo */
+.popular {
+    border: 2px solid #e52329;
+}
+
+.preco {
+    color: #e52329;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #202020;
+    border-top: 2px solid #414141;
+    text-align: center;
+    padding: 30px 15px;
+    color: #c9c9c9;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Celulares e tablets */
+@media (max-width: 760px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .grade {
+        grid-template-columns: 1fr;
+    }
+
+    #inicio h2 {
+        font-size: 29px;
+    }
+
+    #filmes article img {
+        height: 350px;
+    }
+}

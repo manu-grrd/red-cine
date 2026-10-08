@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineVibe - Cinema</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>🎬 CINEVIBE</h1>
+    <header class="cabecalho">
+        <h1>🎬 CINE<span>VIBE</span></h1>
 
-        <nav>
+        <nav class="menu">
             <a href="#inicio">Início</a>
             <a href="#filmes">Filmes</a>
             <a href="#sessoes">Sessões</a>
@@ -19,82 +21,97 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Grandes histórias. Emoções gigantes.</h2>
+    <main class="conteudo">
+
+        <section id="inicio" class="banner">
+            <h2>Grandes histórias.<br>Emoções gigantes.</h2>
             <p>Seu próximo filme favorito está esperando por você.</p>
-            <a href="#filmes">Ver filmes</a>
+            <a class="botao" href="#filmes">VER FILMES</a>
         </section>
 
-        <section>
+        <section id="filmes" class="secao-filmes">
             <h2>Filmes em cartaz</h2>
 
-            <article>
-                <img src="https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?auto=format&fit=crop&w=500&q=80" alt="Filme de ação">
-                <h3>Missão Extrema</h3>
-                <p>Ação e aventura</p>
-                <a href="#sessoes">Ver sessões</a>
-            </article>
+            <div class="grade">
 
-            <article>
-                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=500&q=80" alt="Aventura cinematográfica">
-                <h3>Mundo Fantástico</h3>
-                <p>Animação e família</p>
-                <a href="#sessoes">Ver sessões</a>
-            </article>
+                <article class="card-filme">
+                    <img src="https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?auto=format&fit=crop&w=500&q=80" alt="Filme de ação">
+                    <h3>Missão Extrema</h3>
+                    <p>Ação e aventura</p>
+                    <a class="botao" href="#sessoes">Ver sessões</a>
+                </article>
 
-            <article>
-                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=500&q=80" alt="Espaço sideral">
-                <h3>Além das Estrelas</h3>
-                <p>Ficção científica</p>
-                <a href="#sessoes">Ver sessões</a>
-            </article>
+                <article class="card-filme">
+                    <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=500&q=80" alt="Aventura cinematográfica">
+                    <h3>Mundo Fantástico</h3>
+                    <p>Animação e família</p>
+                    <a class="botao" href="#sessoes">Ver sessões</a>
+                </article>
+
+                <article class="card-filme">
+                    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=500&q=80" alt="Espaço sideral">
+                    <h3>Além das Estrelas</h3>
+                    <p>Ficção científica</p>
+                    <a class="botao" href="#sessoes">Ver sessões</a>
+                </article>
+
+            </div>
         </section>
 
-        <section>
+        <section id="sessoes" class="secao-sessoes">
             <h2>Horários das sessões</h2>
 
-            <article>
-                <h3>Missão Extrema</h3>
-                <p>15h30, 18h00 e 20h45</p>
-            </article>
+            <div class="grade">
+                <article class="card-sessao">
+                    <h3>Missão Extrema</h3>
+                    <p>15h30, 18h00 e 20h45</p>
+                </article>
 
-            <article>
-                <h3>Mundo Fantástico</h3>
-                <p>14h00, 16h15 e 18h30</p>
-            </article>
+                <article class="card-sessao">
+                    <h3>Mundo Fantástico</h3>
+                    <p>14h00, 16h15 e 18h30</p>
+                </article>
 
-            <article>
-                <h3>Além das Estrelas</h3>
-                <p>17h00, 19h30 e 21h45</p>
-            </article>
+                <article class="card-sessao">
+                    <h3>Além das Estrelas</h3>
+                    <p>17h00, 19h30 e 21h45</p>
+                </article>
+            </div>
         </section>
 
-        <section>
+        <section id="ingressos" class="secao-ingressos">
             <h2>Ingressos e combos</h2>
 
-            <article>
-                <h3>Ingresso comum</h3>
-                <p>Entrada para uma sessão.</p>
-                <p>R$ 20,00</p>
-            </article>
+            <div class="grade">
 
-            <article>
-                <h3>Combo Cine</h3>
-                <p>Ingresso, pipoca média e refrigerante.</p>
-                <p>R$ 35,00</p>
-            </article>
+                <article class="card-ingresso">
+                    <h3>Ingresso comum</h3>
+                    <p>Entrada para uma sessão.</p>
+                    <p class="preco">R$ 20,00</p>
+                    <a class="botao" href="mailto:contato@cinevibe.com">Tenho interesse</a>
+                </article>
 
-            <article>
-                <h3>Combo Família</h3>
-                <p>Dois ingressos, pipoca grande e duas bebidas.</p>
-                <p>R$ 65,00</p>
-            </article>
+                <article class="card-ingresso popular">
+                    <h3>Combo Cine</h3>
+                    <p>Ingresso, pipoca média e refrigerante.</p>
+                    <p class="preco">R$ 35,00</p>
+                    <a class="botao" href="mailto:contato@cinevibe.com">Tenho interesse</a>
+                </article>
+
+                <article class="card-ingresso">
+                    <h3>Combo Família</h3>
+                    <p>Dois ingressos, pipoca grande e duas bebidas.</p>
+                    <p class="preco">R$ 65,00</p>
+                    <a class="botao" href="mailto:contato@cinevibe.com">Tenho interesse</a>
+                </article>
+
+            </div>
         </section>
+
     </main>
 
-    <footer>
-        <p>CineVibe - Grandes histórias. Emoções gigantes.</p>
+    <footer id="contato" class="rodape">
+        <p><strong>CineVibe</strong> - Grandes histórias. Emoções gigantes.</p>
         <p>Endereço: Rua Exemplo, 123 - Sua cidade</p>
         <p>Funcionamento: todos os dias, das 13h às 23h</p>
         <p>Contato: contato@cinevibe.com</p>
